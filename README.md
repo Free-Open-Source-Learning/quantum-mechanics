@@ -4,7 +4,7 @@
 
 **Category:** Notes  
 **Language:** :flag_it:  
-**Status:** :yellow_circle:  [:fontawesome-solid-file-pdf:](https://github.com/Free-Open-Source-Learning/quantum-mechanics/blob/main/meccanica_quantistica.pdf "PDF available")  
+**Status:** :yellow_circle:  [:page_facing_up: PDF available](https://github.com/Free-Open-Source-Learning/quantum-mechanics/blob/main/meccanica_quantistica.pdf "PDF available")  
 **Comments:** Chapter 1-6 complete, chapter 7 missing time-dependant perturbations topic
 
 
