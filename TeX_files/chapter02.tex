@@ -1,0 +1,463 @@
+\chapter{Introduzione alla meccanica quantistica}
+
+\section{Notazione di Dirac e rappresentazione delle coordinate}
+Diamo rapidamente la definizione delle grandezze che andremo a studiare. Il loro significato verrà spiegato nelle pagine successive.
+\subsection{Notazione di Dirac}
+\begin{align}
+\ket{\psi} &= \left(
+\begin{array}{ccc}\psi_1 \\ \dots \\ \psi_n\end{array}
+\right) \quad &\text{Ket, o vettore colonna}\\
+\bra{\psi} &= (\psi_1^* \dots \psi_n^*) \quad &\text{Bra, o vettore riga}\\
+\mathbf{\hat O} &= \left(
+\begin{array}{ccc}o_{11} & \dots & o_{1n} \\ \dots & \dots & \dots \\ o_{n1} & \dots & o_{nn}\end{array}
+\right) \quad &\text{Operatore}\\
+\braket{\phi | \psi} &= 
+\left(\phi_i^* \dots \phi_n^* \right) \left(
+\begin{array}{ccc}\psi_1 \\ \dots \\ \psi_n\end{array}
+\right) \quad &\text{Braket, o prodotto scalare}\\	
+|\psi|^2 &=\braket{\psi | \psi} = 
+\left(\psi_i^* \dots \psi_n^* \right) \left(
+\begin{array}{ccc}\psi_1 \\ \dots \\ \psi_n\end{array}
+\right) \quad &\text{Modulo quadro di un vettore}
+\end{align}
+ \subsection{Rappresentazione di Schrödinger (o delle coordinate)}
+ \begin{align}
+ 	\braket{x | \psi} &\rightarrow \psi(x,t) \in L_2 \quad &\text{Funzione d'onda}\\
+ 	q_i\ket{\psi} &\rightarrow x_i\psi(x,t) \quad &\text{Operatore posizone applicato alla funzione d'onda}\\
+ 	p_i\ket{\psi} &\rightarrow -i\hbar \frac{\partial}{\partial x_i}  \psi(x,t) \quad &\text{Operatore impulso applicato alla funzione d'onda}\\
+ 	\braket{\phi | \psi} &\rightarrow \int \limits_{R^n} dx \: \phi^*(x,t)\psi(x,t) \quad &\text{Prodotto scalare in rappresentazione di Schrödinger}\\
+ 	\braket{\psi | \psi} &\rightarrow |\psi(x,t)|^2 = \int \limits_{R^n} dx \: \psi^*(x,t)\psi(x,t) \quad &\text{Modulo quadro in rappresentazione di Schrödinger}
+ \end{align}
+ 
+\newpage
+
+\section{I postulati della meccanica quantistica}
+
+Per semplicità, affronteremo il discorso dei postulati in 1D. 
+
+\subsection{Principio di sovrapposizione}
+	Ogni stato fisico può essere descritto in due modi:
+	
+	\begin{enumerate}
+		
+		\item tramite un \textbf{raggio di vettori} in uno spazio vettoriale complesso $H$ 
+		
+		(un raggio di vettori è composto da vettori proporzionali tra di loro con un fattore complesso).
+		
+		\item tramite una funzione di probabilità chiamata \textbf{funzone d'onda} $\psi(x,t) \in L_2$, definita come
+	
+	\begin{equation}
+	\psi(x,t)= |\psi(x,t)|e^{i\theta}
+	\end{equation}
+	
+	Per un sistema a più corpi avremo
+		
+	\begin{equation}
+	\psi(x,t)= \prod_{n} \psi_n(x,t)
+	\end{equation}
+	\end{enumerate}
+
+La probabilità di trovare una particella in un intervallo $[x_0, x_1]$ sarà data da 	
+
+	\begin{equation}
+	P(x \in [x_0, x_1])= \int_{x_0}^{x_1} dx \: |\psi(x,t)|^2
+	\end{equation}
+
+ Se la $\psi(x,t)$ esprime tutti i possibili stati di una particella, allora avremo che se 
+	
+	\begin{equation}
+	\ket{\psi}= \sum_{n}c_n \ket{\psi_n} \rightarrow \psi(x,t)= \int dx \: c_n \psi_n(x,t)
+	\end{equation}
+	
+avremo che
+	
+	\begin{equation}
+	P(x)= \sum_{n} |c_n|^2= 1 
+	\end{equation}
+		
+\subsection{Le osservabili}
+
+In meccanica quantistica il concetto di misura di un'osservabile viene affrontato matematicamente come applicazione di operatori (che rappresentano le \textbf{osservabili}) su vettori (che rappresentano gli \textbf{stati del sistema}). 
+
+Gli operatori associati alle osservabili sono Hermitiani, ossia 
+
+\begin{equation}
+\mathbf{\hat O} = \mathbf{\hat O^\dagger} \longleftrightarrow o_{ij}=o^*_{ji}
+\end{equation}
+
+e quindi $\exists$ una base di autovettori ortonormali in cui $\mathbf{\hat O}$ è diagonale con autovalori \textbf{o} $\in R$.\newline
+
+Effettuare una misura \textbf{perturba il sistema}, facendolo \textbf{collassare}
+
+\begin{equation}
+\mathbf{\hat O} \ket{\psi}=\ket{\psi'}
+\end{equation}
+
+Se lo stato su cui stiamo effettuando la misura è autovettore dell'operatore in questione, avremo che
+
+\begin{equation}
+\mathbf{\hat O} \ket{\psi}=o\ket{\psi}
+\end{equation}
+
+Operativamente quindi la misura di un'osservabile può essere espressa come
+
+\begin{enumerate}
+	\item Notazione di Dirac: 
+	\begin{equation}
+\bra{\psi}	\mathbf{\hat O} \ket{\psi}=\bra{\psi} o \ket{\psi}= o \braket{\psi | \psi}= o \in R
+	\end{equation}
+	\item Rappresentazione di Schrödinger:
+	
+	\begin{equation}
+\mathbf{\hat O} \ket{\psi} \rightarrow O(x)\psi(x,t)
+	\end{equation}
+	
+	\begin{equation}
+\bra{\psi}	\mathbf{\hat O} \ket{\psi}= \int_{-\infty}^{+\infty}dx \: \psi^*(x,t)O(x)\psi(x,t)
+\end{equation}
+	
+\end{enumerate}
+
+
+Presi due operatori $\mathbf{\hat A}$ e $\mathbf{\hat B}$, se questi sono Hermitiani avremo che 
+
+	\begin{equation}
+\mathbf{\hat A}\mathbf{\hat A^\dagger}= \mathds{1} =\mathbf{\hat B}\mathbf{\hat B^\dagger}
+\end{equation}
+
+e quindi 
+
+\begin{equation}
+[\mathbf{\hat A},\mathbf{\hat B}]= \mathbf{\hat A}\mathbf{\hat B} - \mathbf{\hat B}\mathbf{\hat A}=0 
+\end{equation}
+
+
+Allora si dice che i due operatori \textbf{commutano}, e che le osservabili che rappresentano sono \textbf{compatibili}, ossia che la misura di una sullo stato non disturba la misura dell'altra. 
+In formule questo si rispecchia nel seguente modo
+
+\begin{equation}
+\left\{\begin{array}{ccc}
+
+\mathbf{\hat A} \ket{\psi}= a\ket{\psi} \\ \mathbf{\hat B} \ket{\psi}= b\ket{\psi} \end{array}\right. \rightarrow \mathbf{\hat A}\mathbf{\hat B}\ket{\psi}=\mathbf{\hat B}\mathbf{\hat A}\ket{\psi}=ab\ket{\psi}
+\end{equation}
+
+in quanto
+
+\begin{equation}
+\mathbf{\hat A}\mathbf{\hat B}\ket{\psi}= \mathbf{\hat A}(\mathbf{\hat B}\ket{\psi})=\mathbf{\hat A}b\ket{\psi}=b\mathbf{\hat A}\ket{\psi}= ab\ket{\psi}
+\end{equation}
+ e viceversa. 
+ 
+ Questo significa inoltre che $\exists$ una base di autovettori (detti \textbf{simultanei}) che diagonalizza entrambi.
+
+\subsection{Probabilità di transizione} 
+
+Data un'osservabile $\xi$, sappiamo che una sua misura sullo stato $\ket{A}$ causerà una transizione, con probabilità $P_i$. Definiamo quindi la \textbf{probabilità di transizione tre due stati} come
+
+\begin{align}
+P(\ket{A} \rightarrow \ket{B})= \frac{|\braket{B|A}|^2}{\braket{A|A}\braket{B|B}}
+\end{align}
+
+che è una definizione valida dato che
+
+\begin{enumerate}
+	\item non dipende dai singoli vettori ma dallo stato, in quanto eventuali fasi si eliminano.
+	\item ha valori compresi fra 0 (stati ortogonali) e 1 max grazie alla \textbf{disuguaglianza di Schwartz}.
+\end{enumerate}
+
+\newpage
+ 
+\section{Conseguenze dei postulati}
+ 
+\subsection{Osservabili non degeneri}
+ 
+Data un'osservabile non degenere $\xi$ con spettro $\xi_i$, i suoi autovalori normalizzati a 1 $\ket{\xi_i}$ formano un sistema ortonormale completo.
+
+\bigskip
+
+L'ortogonalità è dovuta dal fatto che una misura su autostato non darà mai un altro valore, e la probabilità di transizione è quindi nulla:
+
+\begin{align}
+{}&P(\xi_i \rightarrow \xi_j)= |\braket{\xi_i|\xi_j}|^2 \\
+&\braket{\xi_i|\xi_j} = \delta_{ij}= \left\{
+\begin{array}{cc}
+0 \quad i \neq j \\
+1 \quad i = j
+\end{array}
+\right.
+\end{align}
+
+
+\bigskip
+
+La completezza la dimostriamo per assurdo.
+
+Supponiamo esista un vettore $\ket{A} \; t.c. \braket{A|\xi_i}=0 \; \forall i$, avremmo che
+
+ $P_i= |\braket{A|\xi_i}|^2=0 \rightarrow P= \sum_i P_i=0$, il che  è impossibile.
+
+\bigskip
+
+Ogni vettore $\ket{A}$ può essere quindi scritto come
+
+\begin{align}
+\ket{A}= \sum_{i=1}^{+\infty} a_i \ket{\xi_i}
+\end{align}
+
+Possiamo anche notare che 
+
+\begin{align}
+\braket{A|A}= \sum_{i,j} a_i^* a_j \braket{\xi_i|\xi_j} = \sum_{i,j} a_i^* a_j \delta_{ij} = \sum_{i} |a_i|^2
+\end{align}
+
+Da cui ricaviamo due conseguenze:
+
+\begin{enumerate}
+	\item Affinché $\ket{A}$ sia autovettore di $H$ dovremo avere $\sum_{i} |a_i|^2<+\infty$
+	\item Se $\ket{A}$ è normalizzato, i coefficienti $a_i$ hanno un significato ben definito: sono le probabilità di transizione $P_i(\ket{A} \rightarrow \ket{\xi_i})$, con $P=\sum_i P_i=1$.
+	
+	 Se $\ket{A}$ non è normalizzato, ma gli $\ket{\xi_i}$ sì allora si avrà $P_i= \frac{|a_i|^2}{\braket{A|A}}$
+\end{enumerate}
+
+Notare che anche se solo gli $|a_i|^2$ influiscono sulle probabilità di transizione, questo non vuol dire che gli $a_i$ siano privi di significato fisico, in quanto le fasi in essi contenute defniscono univocamente gli stati.
+	
+	
+\subsection{Osservabili degeneri}
+
+In questo caso valgono ancora la completezza e l'ortogonalità \textbf{tra autovettori vcorrispondenti ad autovalori diversi}, ma non possiamo più parlare di base ortonormale, in quanto \textbf{non è vero che autovalori distinti corrispondenti ad uno stesso autovalore siano ortogonali tra di loro}.
+
+Possiamo enunciare il seguente 
+
+\bigskip
+
+\textbf{Teorema:}
+
+\textit{Ogni combinazione lineare di autovettori di un'osservabile corrispondenti allo stesso autovalore, è ancora autovettore dell'osservabile corrispondente allo stesso autovalore. Ovvero avremo che dati}
+
+\begin{align}
+\ket{\xi'_1} \;,\; \ket{\xi''_1} \quad t.c. \quad \xi\ket{\xi'_1}=\xi_1\ket{\xi'_1} \;,\; \xi\ket{\xi''_1}=\xi_1\ket{\xi''_1}
+\end{align}
+
+\textit{E definito}
+
+\begin{align}
+\ket{\xi'''}= a\ket{\xi'_1} + b\ket{\xi''_1}
+\end{align}
+
+\textit{avremo che}
+
+\begin{align}
+\xi\ket{\xi'''_1} {}&= \xi(a\ket{\xi'_1} + b\ket{\xi''_1})= \nonumber \\
+&= a\xi\ket{\xi'_1} + b\xi\ket{\xi''_1}= \nonumber \\
+&=\xi_1(a\ket{\xi'_1} + b\ket{\xi''_1}) = \xi_1 \ket{\xi'''_1}
+\end{align}
+
+
+\bigskip
+
+Questo discorso si applica a un numero di combinazioni qualsiasi, finito o infinito (grazie alla continuità), e possiamo quindi affermare che \textbf{l'insieme degli autovettori $\ket{\xi^{(n)}_i}$ di una osservabile corrispondeti allo stesso autovalore $\xi_i$ formano un sottospazio lineare chiuso di $H$}, detto \textbf{Autospazio di $\xi_i$}.
+
+La dimensione di questo spazio viene detta \textbf{grado di degenerazione} dell'autovalore.
+
+Nonostante gli autovettori degeneri non formino una base ortonormale, essendo l'insieme completo è comunque possibile estrarre un insieme completo ortonormale, composto da:
+
+\begin{enumerate}
+	\item tutti gli autovalori non degeneri dell'osservabile
+	\item un insieme di autovettori otogonali tra di loro corrispondenti ad ogni autovalore degenere, in numero pari al grado di degenerazione
+\end{enumerate}
+
+La scelta non è univoca, perché in ogni autospazio degenere dell'osservabile le combinazioni possibili possono essere anche infinite.
+
+A questo punto rimangono due domande:
+
+\begin{enumerate}
+	\item Qual è la probabilità che una misura di $\xi$ dia come risultato l'autovalore degenere $\xi_i$?
+	\item Qual è lo stato del sistema dopo la misura?
+\end{enumerate}
+
+Rispondiamo a tali domande nel prossimo paragrafo.
+ 
+\subsection{Postulato di Von Neumann}
+ 
+Le risposte alle domande del paragrafo scorsol giaccino nel 
+
+\bigskip
+
+\textbf{Postulato di Von Nemumann:} 
+
+\textit{Se una misura di $\xi$ sullo stato $\ket{A}$ restituisce l'autovalore degenere $\xi_i$, lo stato dopo la misura viene rappresentato proiettando ortogonalmente $\ket{A}$ sull'autospazio corrispondente a $\xi_i$, ottenendo}
+
+\begin{align}
+\ket{\overline{\xi_i}}= \sum_{k=1}^n a_i^{(k)}\ket{\xi^{(k)}_i}
+\end{align} 
+
+\bigskip
+
+Otteniamo così le risposte che cerchiamo:
+
+\begin{enumerate}
+	\item La probabilità di ottenere $\xi_i$ viene data da
+	\begin{align}
+	P_i=P(\ket{A} \rightarrow \ket{\xi_1}){}&= \nonumber \\ &=\frac{|\braket{A|\xi_i}|^2}{\braket{\xi_i|\xi_i}} &= \nonumber \\
+	&=\frac{(\sum_{k=1}^n |a_i^{(k)}|^2)^2}{\sum_{k=1}^n |a_i^{(k)}|^2}= \nonumber \\ &=\sum_{k=1}^n |a_i^{(k)}|^2
+	\end{align}
+	\item Lo stato in cui il sistema effettua la transizione è quello con probabilità massima, o che è stato meno perturbato dal sistema.
+	
+	Ovviamente se il sistema è già autostato esso non viene perturbato per nulla.
+\end{enumerate}
+
+\newpage
+ 
+ 
+\section{Operatore di Hamilton ed Equazione di Schrödinger}
+ 
+Un classico esempio di osservabile è dato dall'\textbf{energia del sistema}, rappresentata dall'\textbf{Hamiltoniana}
+
+\begin{equation}
+H= T + V = -i\hbar \frac{1}{2m} \frac{\partial^2}{\partial x^2} + V
+\end{equation}
+\newline
+Da cui si ricava l'\textbf{equazione di Schrödinger}:
+
+\begin{equation}
+H\psi(x,t) = E\psi(x,t) 
+\end{equation}
+
+la quale diventa
+
+\begin{equation}
+\psi''(x,t) -\frac{2m}{i\hbar} (V-E)\psi(x,t)=0
+\end{equation}
+
+che è un'\textbf{equazione differenziale al secondo ordine con coefficienti non costanti}, la cui soluzione dipende da V. \newline
+
+
+\section{Evoluzione temporale ed equazione di Schrödinger dipendente dal tempo}
+
+L'evoluzione temporale può essere studiata come una transizione di stati del tipo
+
+\begin{align}
+\ket{A,t_0=0} \rightarrow \ket{A, t}
+\end{align}
+
+Definendo un operatore unitario lineare tale che
+
+\begin{align}
+\ket{A, t} = U(t,t_0)\ket{A, t_0=0}
+\end{align}
+
+La \textbf{linearità} ci garantisce che le relazioni di sovrapposizione si mantengano, mentre l'\textbf{unitarietà} l'indipendenza dal tempo dei prodotti scalari.
+
+In generale, dati $t_0<t_1<t_2$ avremo che
+
+\begin{align}
+U(t_2,t_0)=U(t_2,t_1)U(t_1,t_0)
+\end{align}
+
+Inoltre se si considerano forze indipendenti dal tempo non è necessario imporre condizioni sul $t_0$, e potremo scrivere
+
+\begin{align}
+{}&U(t)\equiv U(t,t_0=0) \\
+&U(t_{1}+t_{2})=U(t_{1}) U(t_{2})=U(t_{2}) U(t_{1}) 
+\end{align}
+
+In questo caso, per il \textbf{teorema di Stone} possiamo definire 
+
+\begin{align}
+U(t)= e^{-iKt}
+\end{align}
+
+$K$ è un operatore autoaggiunto, ma come lo rappresentiamo?
+
+Iniziamo postulando che l'operatore di traslazione spaziale possa essere descritto dall'espressione
+
+\begin{align}
+U(q)= e^{-ipq}
+\end{align}
+
+E siccome dalla teoria classica delle trasformazioni canoniche sappiamo che se $p$ è il generatore delle trasformazioni spaziali, allora $H$ dovrà esserlo di quelle temporali. Avremo quindi che
+
+\begin{align}
+K \propto H \rightarrow K = aH \quad ; \quad a=cost. 
+\end{align}
+
+la costante di proporzionalità deve avere le dimensioni dell'inverso di un'azione, ovvero
+
+\begin{align}
+a=\frac{1}{\hbar}
+\end{align}
+
+e otteniamo quindi l'operatore di evoluzione temporale
+
+\begin{align}
+U(t)= e^{-i\frac{H}{\hbar}t}
+\end{align}
+
+\newpage
+\subsection{L'equazione di Schrödinger dipendente dal tempo}
+
+Partendo dall'espressione
+
+\begin{align}
+\ket{A,t}= e^{-i\frac{H}{\hbar}t} \ket{A,0}
+\end{align}
+
+Derivando rispetto al tempo otteniamo
+
+\begin{align}
+{}&\frac{\partial}{\partial t}\ket{A,t}= \frac{\partial}{\partial t}e^{-i\frac{H}{\hbar}t} \ket{A,0}=
+-\frac{i}{\hbar}He^{-i\frac{H}{\hbar}t} \ket{A,0} = -\frac{i}{\hbar}H\ket{A,t}\\
+&\downarrow \nonumber \\
+&H\ket{A,t}= i\hbar\frac{\partial}{\partial t}\ket{A,t}
+\end{align}
+
+Otteniamo così l'equazione di Schrödinger dipendente dal tempo. 
+
+Una nota importante è al contrario dei discorsi fatti nel paragrafo precendente, e nonostante questa equazione derivi da essi, \textbf{essa rimane valida anche in caso di $H$ dipendente dal tempo}.
+
+In RS potremo scrivere in forma generale
+
+\begin{align}
+i\hbar \frac{\partial}{\partial t} \psi(x,t)= H(x,p;t)\psi(x,t)
+\end{align}
+
+
+Se il sistema è soggetto a forze posizionali si può ricavare l'\textbf{equazione di continuità}:
+
+\begin{align}
+div \, j(x,t) + \frac{\partial}{\partial t} \rho(x,t)=0
+\end{align}
+
+
+\subsubsection{Stati stazionari}
+
+Si parla di \textbf{stati stazionari} quando si hanno stati che non evolvono nel tempo.
+
+Cosa vuol dire  questo? Vuol dire che sia $\ket{A,t}$ che $\ket{A,0}$ rappresentano lo stesso stato e si ha quindi che
+
+\begin{align}
+\ket{A,t}= C(t)\ket{A,0}
+\end{align}
+
+Possiamo dimostrare che, in caso di forze indipendenti dal tempo, \textbf{gli stati stazionari di un sistema sono tutti e soli gli autostati di $H$}, infatti
+
+\begin{align}
+H\ket{E}= E\ket{E} \rightarrow U(t)\ket{E}= e^{-i\frac{H}{\hbar}t} \ket{E}=e^{-i\frac{E}{\hbar}t} \ket{E}
+\end{align}
+
+\bigskip
+
+
+C'è un problema però: applicare l'operatore di evoluzione temporale ad uno stato generico $\ket{A,0}$ può risultare scomodo e macchinoso. Conviene quindi \textbf{svilupparlo nella base degli autovettori di $H$}:
+	
+\begin{align}
+{}&\ket{A,0}= \sum_{n}a_n \ket{E_n} \\
+&\downarrow \nonumber \\
+&\ket{A,t}=U(t)\ket{A,0}=e^{-i\frac{H}{\hbar}t}\ket{A,0}= e^{-i\frac{H}{\hbar}t}\sum_{n}a_n \ket{E_n}\\
+&\downarrow \nonumber \\
+&\ket{A,t}= \sum_{n}a_n e^{-i\frac{E_n}{\hbar}t} \ket{E_n} \quad ; \quad a_n =\braket{E_n|A,0}
+\end{align}
+
+E quindi il problema dell'evoluzione temporale è risolto se conosciamo autovalori ed autovettori di $H$! 
+
+(Nota: se $H$ ha solo autovalori continui non esistono autostati propri, e quindi nessuno stato è rigorosamente stazionario)

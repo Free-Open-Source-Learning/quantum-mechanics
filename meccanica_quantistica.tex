@@ -1,0 +1,49 @@
+\documentclass[a4paper,12pt]{book}
+\usepackage[legalpaper, portrait, margin=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{braket}
+\usepackage{dsfont}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{cancel}
+\usepackage{bbold}
+\usepackage{titlepic}
+\usepackage{hyperref}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+\newcommand{\numberset}{\mathbb}
+\newcommand{\N}{\numberset{N}}
+\newcommand{\R}{\numberset{R}}
+\newcommand{\Z}{\numberset{Z}}
+
+
+\begin{document}
+
+
+
+\author{Giorgio Cambiè, Alessandro Marcelli}
+\title{Appunti di Meccanica Quantistica}
+\date{2019}
+
+\titlepic{\includegraphics[]{images/copertina.png}}
+
+
+\frontmatter
+\maketitle
+\tableofcontents
+ 
+\mainmatter
+\include{./TeX_files/chapter01}
+\include{./TeX_files/chapter02}
+\include{./TeX_files/chapter03}
+\include{./TeX_files/chapter04}
+\include{./TeX_files/chapter05}
+\include{./TeX_files/chapter06}
+\include{./TeX_files/chapter07}
+
+\backmatter
+% bibliography, glossary and index would go here.
+
+\end{document}

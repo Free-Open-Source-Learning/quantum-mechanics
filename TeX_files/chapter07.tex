@@ -1,0 +1,299 @@
+\chapter{Teoria delle perturbazioni}
+
+La teoria delle perturbazioni è uno strumento molto potente nello studio di sistemi complessi. Il procedimento si basa sullo scomporre il sistema studiato in un caso noto (ex. l'Oscillatore Armonico) per poi aggiungere mano a mano piccoli contributi fino ad approssimare quanto si vuole il sistema da studiare.
+
+\section{Perturbazioni indipendenti dal tempo}
+
+Supponiamo di avere
+\begin{align}
+H^0\psi_n^0=E_n^0\psi_n^0 \quad ; \quad \braket{\psi_m^0|\psi_n^0}=\delta_{mn}
+\end{align}
+Immaginiamo ora di sommare un piccolo contributo. Avremo
+\begin{align}
+H\psi_n=E_n\psi_n 
+\end{align}
+con
+\begin{align}
+{}&H= H^0 + \lambda H'\\
+&\lim_{\lambda \rightarrow 0}H= H^0
+\end{align}
+
+Espandiamo in serie le funzioni d'onda e gli autovalori dell'energia in funzione di $\lambda$:
+\begin{align}
+{}&\psi_n= \psi^0_n + \lambda \psi_n^1+ \lambda^2 \psi_n^2+\dots \\
+&E_n= E_n^0 + \lambda E_n^1+ \lambda^2 E_n^2+\dots
+\end{align}
+
+Questo ci porta a riscrivere, 
+\begin{align}
+{}&H^0\psi^0_n=E^0_0n\psi^0_n	\qquad \text{eq. imperturbata}\\
+&\lambda(H^0\psi'_n + H'\psi^0_n)=\lambda(E'_n \psi^0_n + E^0_n\psi'_n) \qquad\qquad\qquad\qquad\qquad\,\, \text{I ordine}\\
+&\lambda^2 (H^0\psi^2_n + H'\psi'_n)=\lambda^2 (E^0_n \psi^2_n + E^0_n \psi_n^2 + E_n^2\psi_n^0 + E_n'\psi_n')\qquad \text{II ordine} \\
+\vdots \nonumber
+\end{align}
+
+\subsection{Perturbazione al I ordine}
+
+\begin{align}
+H^0\psi_n' + H'\psi_n^0= E_n'\psi_n^0 + E_n^0\psi_n' 
+\end{align}
+
+Moltiplicando entrambi i lati per il complesso coniugato di $\psi_n^0$ possiamo scrivere, passando in notazione di Dirac:
+\begin{align}
+\braket{\psi_n^0 |H^0|\psi_n'} + \braket{\psi_n^0 |H'|\psi_n^0} = E_n'\braket{\psi_n^0|\psi_n^0} + E_n^0 \braket{\psi_n^0|\psi_n'}
+\end{align}
+
+Siccome non sappiamo nulla delle $\psi_n'$ possiamo supporre che essa sia ortogonale a $\psi_n^0$, e quindi, ricordando che H è hermitiano:
+\begin{align}
+E_n^0 \, \cancel{\braket{\psi_n^0 |\psi_n'}}+ \braket{\psi_n^0 |H'|\psi_n^0}= E_n' + E_n^0 \, \cancel{\braket{\psi_n^0 |\psi_n'}}
+\end{align}
+ossia
+\begin{align}
+E_n'=\braket{\psi_n^0 |H'|\psi_n^0}
+\end{align}
+
+ed abbiamo così trovato la correzione dell'energia  al primo ordine.
+
+Che forma avranno invece le correzioni alle autofunzioni?
+
+Ricordiamo che se le $\psi_n^0$ formano un set di autofunzioni completo possiamo riscrivere le $\psi_n'$ come combinazioni lineari di queste:
+\begin{align}
+\psi_n'= \sum_{m\neq n}c_m^{(n)}\psi_m^0
+\end{align}
+
+La condizione $m\neq n$ è necessaria in quanto se $\psi_n'$ è soluzione dell'equazione sicuramente lo sarà la combinazione $\psi_n' + \alpha \psi_n^0$ con $\alpha=cost.$
+
+\newpage
+
+Questo ci porta ad avere l'eq.di Schrödinger nella forma
+\begin{align}
+(H^0 - E^0_n)\ket{\psi_n'} = (H^0 - E^0_n)\sum_{m\neq n}c_m^{(n)}\ket{\psi_m^0} = -(H'-E')\ket{\psi_n^0}
+\end{align}
+che possiamo riscrivere
+\begin{align}
+\sum_{m\neq n}c_m^{(n)} (E_m^0 - E^0_n) \ket{\psi_m^0} = -(H'-E')\ket{\psi_n^0}
+\end{align}
+Se ora moltiplichiamo per una generica $\ket{\psi_k^0}$ otteniamo
+\begin{align}
+\sum_{m\neq n}c_m^{(n)} (E_m^0 - E^0_n) \braket{\psi_k^0|\psi_m^0} = -(H'-E')\braket{\psi_k^0|\psi_n^0}
+\end{align}
+Notiamo che se $k=n$ il termine a sinistra si annulla, quindi deve essere $k\neq n$, da cui
+\begin{align}
+\sum_{m\neq n}c_m^{(n)} (E_m^0 - E^0_n)\delta_{km} = -\braket{\psi_k^0|H'|\psi_n^0} +E'\, \cancel{\braket{\psi_k^0|\psi_n^0}}
+\end{align}
+che diventa
+\begin{align}
+{}&c_m^{(n)} (E_m^0 - E^0_n) = -\braket{\psi_k^0|H'|\psi_n^0}\\
+&\downarrow \nonumber \\
+\label{eq:eq0}
+& c_m^{(n)}  = \frac{\braket{\psi_k^0|H'|\psi_n^0}}{E_n^0 - E^0_m}
+\end{align}
+da cui otteniamo infine
+\begin{align}
+\psi_n'= \sum_{m\neq n} \frac{\braket{\psi_k^0|H'|\psi_n^0}}{E_n^0 - E^0_m} \psi_m^0
+\end{align}
+
+\subsection{Perturbazione al II ordine}
+
+Ricordiamo che al II ordine abbiamo:
+\begin{align}
+         \label{eq:eq1}
+H^0\psi^2_n + H'\psi'_n=E^0_n \psi^2_n + E^2_n \psi_n^0 + E_n^2\psi_n^0 + E_n'\psi_n'
+\end{align}
+
+Avremo di nuovo:
+\begin{align}
+\label{eq:eq2}
+\psi_n'= \sum_{m\neq n}c_m^{(n)}\psi_m^0
+\end{align}
+
+ma stavolta dobbiamo tenere da conto anche $\psi_n^2$, di cui non sappiamo nulla.
+
+Partiamo di nuovo dalle correzioni sull'energia. Passiamo in notazione di Dirac per comodità e moltiplichiamo da entrambi i lati per $\bra{\psi_n^0}$ la $\eqref{eq:eq1}$. Ricordando le considerazioni del paragrafo scorso otteniamo 
+\begin{align}
+\label{eq:eq3}
+{}& \braket{\psi_n^0|H^0|\psi^2_n} + \braket{\psi_n^0|H'|\psi'_n}=E^0_n\cancel{\braket{\psi_n^0|\psi^2_n}} + E^2_n\braket{\psi_n^0|\psi_n^0} + E_n'\cancel{\braket{\psi_n^0|\psi_n'}}\nonumber \\
+& \downarrow \\
+& E_n^0\cancel{\braket{\psi_n^0|\psi^2_n}} + \braket{\psi_n^0|H'|\psi'_n}= E^2_n\braket{\psi_n^0|\psi_n^0}\nonumber \\
+& \downarrow \\
+& E^2_n=\braket{\psi_n^0|H'|\psi'_n}
+\end{align}
+
+Vista la $\eqref{eq:eq2}$ e la $\eqref{eq:eq0}$ possiamo scrivere
+\begin{align}
+E^2_n{}&=\sum_{m\neq n} c_m\braket{\psi_n^0|H'|\psi^0_m} \\
+&= \sum_{m\neq n}\frac{\braket{\psi_m^0|H'|\psi_n^0} \braket{\psi_n^0|H'|\psi^0_m}}{E_n^0 - E^0_m}
+\end{align}
+
+Notiamo come il denominatore non crei problemi fintantoché lo spettro energetico degli stati imperturbati è non degenere.
+
+Siccome $|x^2|= x^* x$ e $\braket{\psi_m^0|H'|\psi_n^0}= (\braket{\psi_n^0|H'|\psi^0_m})^*$ possiamo scrivere in modo più compatto
+\begin{align}
+E^2_n= \sum_{m\neq n}\frac{|\braket{\psi_m^0|H'|\psi_n^0}|^2}{E_n^0 - E^0_m}
+\end{align}
+
+\newpage
+
+\subsection{Caso degenere}
+
+Affrontiamo ora il problema della degenerazione.
+Avremo, dato un livello dell'energia imperturbata
+\begin{align}
+E_d^0 \; t.c. \left\{\begin{array}{cc}
+H^0\ket{\psi^0_a}= E_d^0\ket{\psi^0_a} \\
+H^0\ket{\psi^0_b}= E_d^0\ket{\psi^0_b}
+\end{array}
+\right. \quad ; \quad \braket{\psi_a^0 | \psi_b^0}=0
+\end{align}
+
+Sappiamo già che anche $\ket{\psi^0}= \alpha \ket{\psi^0_a} + \beta \ket{\psi^0_b}$ sarà autofunzione di $H$ tale che $H^0\ket{\psi^0}=E_d^0\ket{\psi^0}$.
+
+Cosa accade quando si perturba l'energia?
+
+Nel migliore dei casi si ha una rimozione della degenerazione, e che quando "spegniamo" la perturbazione $H'$ (cioè si ha $\lambda \rightarrow 0$)avremo che
+\begin{enumerate}
+	\item lo stato ad energia più alta cadrà in una combinazione $\ket{\psi_1}$ tra $\ket{\psi^0_a}$ e $\ket{\psi^0_b}$
+	\item lo stato ad energia più bassa cadrà in una combinazione
+	$\ket{\psi_2}\neq \ket{\psi_1}$
+\end{enumerate} 
+
+Iniziamo dal punto di partenza del caso non degenere. Al I ordine avremo
+\begin{align}
+H^0\ket{\psi'} + H'\ket{\psi^0}=E^0\ket{\psi'} + E'\ket{\psi^0}
+\end{align}
+
+moltiplichiamo tutto per $\bra{\psi_a^0}$ e otteniamo
+\begin{align}
+{}&\braket{\psi_a^0|H^0|\psi^1} + \braket{\psi_a^0|H'|\psi^0} = E^0 \cancel{\braket{\psi_a^0|\psi'}} + E'\braket{\psi_a^0|\psi^0}\\
+&\downarrow \nonumber \\
+&E^0\cancel{\braket{\psi_a^0|\psi^1}} + \braket{\psi_a^0|H'|\psi^0} =  E'\braket{\psi_a^0|\psi^0}\\
+&\downarrow \nonumber \\
+&\braket{\psi_a^0|H'|\psi^0} =  E'\braket{\psi_a^0|\psi^0}\\
+&\downarrow \nonumber \\
+&\bra{\psi_a^0}H'(\alpha \ket{\psi^0_a} + \beta \ket{\psi^0_b})= E'\bra{\psi_a^0}(\alpha \ket{\psi^0_a} + \beta \ket{\psi^0_b}) \\
+&\downarrow \nonumber \\
+&\alpha \braket{\psi_a^0 |H'|\psi_a^0} + \beta\braket{\psi_a^0 |H'|\psi_b^0} = E' ( \alpha \braket{\psi_a^0|\psi_a^0} + \beta \cancel{\braket{\psi_a^0|\psi_b^0}} )
+\end{align}
+chiamiamo
+\begin{align}
+W_{aa}= \braket{\psi_a^0 |H'|\psi_a^0} \\
+W_{ab}= \braket{\psi_a^0 |H'|\psi_b^0}
+\end{align}
+e riscriviamo così
+\begin{align}
+\alpha E' = \alpha W_{aa} + \beta W_{ab}
+\end{align}
+svolgendo gli stessi conti con $\bra{\psi_b^0}$
+\begin{align}
+{}&W_{ba}= \braket{\psi_b^0 |H'|\psi_a^0} \\
+&W_{bb}= \braket{\psi_b^0 |H'|\psi_b^0}\\
+&\beta E' = \alpha W_{ba} + \beta W_{bb}
+\end{align}
+moltiplichiamo $E'$ nella seconda per $W_{ab}$ ottenendo
+\begin{align}
+{}&\beta E' W_{a_b} = \alpha W_{ba}W_{a_b} + \beta W_{bb}W_{a_b} \\
+&\downarrow \nonumber \\
+&E' \beta  W_{a_b} = \alpha W_{ba}W_{a_b} + \beta W_{bb}W_{a_b}
+\end{align}
+e sostituiamo, ricavandolo dall'altra, $\beta W_{ab}= \alpha E' - \alpha W_{aa}$ ottenendo
+\begin{align}
+{}&E' \alpha E' - E'\alpha W_{aa} = \alpha W_{a_b}W_{ba} + \beta W_{a_b}W_{bb} \\
+&\downarrow \nonumber \\
+&\alpha W_{a_b}W_{ba} + W_{bb}[\alpha E' - \alpha W_{aa}] - E'[\alpha E' - \alpha W_{aa}]=0 \\
+&\downarrow \nonumber \\
+& \alpha [W_{a_b}W_{ba} - (E'-W_{bb})(E' - W_{aa})] =0
+\end{align}
+
+\newpage
+
+\textbf{Qualora $\alpha \neq 0$}:
+\begin{align}
+(E')^2 - E'(W_{aa} + W_{bb}) - (W_{aa}W_{bb} - W_{ab}W_{ba})=0
+\end{align}
+Abbiamo così un'equazione lineare al II ordine, le cui soluzioni saranno
+\begin{align}
+E'_\pm = \frac{1}{2} [W_{aa} + W_{bb} \pm \sqrt{(W_{aa}-W_{bb})^2 + 4|W_{ab}|^2}]
+\end{align}
+Abbiamo così trovato le correzioni all'energia.
+
+Cosa succede se uno dei due coefficienti è nullo? Semplicemente ci si riconduce al caso non degenere.
+
+\section{Perturbazioni dipendenti dal tempo (incomplete)}
+
+Studiamo il problema nel caso di un \textbf{sistema a due livelli}. Avremo solo due livelli energetici possibili per l'hamiltoniana imperturbata:
+\begin{align}
+{}&\left\{\begin{array}{cc}
+H^0\ket{\psi^0_a}= E_a^0\ket{\psi^0_a} \\
+H^0\ket{\psi^0_b}= E_b^0\ket{\psi^0_b}
+\end{array}
+\right. \quad;\quad \braket{\psi_a^0 |\psi_b^0}= \delta_{ab} \\
+\nonumber \\
+&\ket{\psi^0}= c_a\ket{\psi^0_a} + c_b\ket{\psi^0_b}
+\end{align}
+In assenza di perturbazioni, in caso di evoluzione temporale essi evolvono indipendentemente:
+\begin{align}
+{}&\ket{\psi^0}= c_a e^{-i \frac{E_a}{\hbar}t} \ket{\psi^0_a} + c_b e^{-i \frac{E_b}{\hbar}t} \ket{\psi^0_b} \\
+&|\psi^0|^2= |c_a|^2 + |c_b|^2=1
+\end{align}
+Aggiungiamo una perturbazione $H'(t)$ dipendente dal tempo. Le autofunzioni dovranno rimanere uguali, correzioni permettendo, ma avremo dei coefficienti dipendenti dal tempo, dato che se scriviamo $\psi(r,t) = \psi(r)e^{-i \frac{E}{\hbar}t}$ nell'equazione di Schroedinger $V(r,t)$ agirà solo su $\psi(r)$, e il risultato di tale applicazione saranno proprio i coefficienti.
+
+Cerchiamo quindi una soluzione del tipo
+\begin{align}
+\ket{\psi^0}= c_a(t) e^{-i \frac{E_a}{\hbar}t} \ket{\psi^0_a} + c_b(t) e^{-i \frac{E_b}{\hbar}t} \ket{\psi^0_b}
+\end{align}
+Ricordando che
+\begin{align}
+&H= H^0 + H'(t) \\
+&H\psi = i \hbar \frac{\partial}{\partial t} \psi
+\end{align}
+Possiamo riscrivere
+\begin{align}
+&(H^0 + H'(t))(c_a(t) e^{-i \frac{E_a}{\hbar}t} \psi^0_a + c_b(t) e^{-i \frac{E_b}{\hbar}t} \psi^0_b)=  i \hbar \frac{\partial}{\partial t} \psi^0\\
+\downarrow \nonumber \\
+& c_a(t) e^{-i \frac{E_a}{\hbar}t} H^0\psi^0_a + c_a(t) e^{-i \frac{E_a}{\hbar}t}H'(t)\psi^0_a +  c_b(t) e^{-i \frac{E_b}{\hbar}t} H^0\psi^0_b + c_b(t) e^{-i \frac{E_b}{\hbar}t}H'(t)\psi^0_b=  \nonumber \\
+&=i\hbar \left[ \dot{c_a}\psi^0_a e^{-i \frac{E_a}{\hbar}t} -i\frac{E_a}{\hbar}c_a\psi^0_a e^{-i \frac{E_a}{\hbar}t} + 
+\dot{c_b}\psi^0_b e^{-i \frac{E_b}{\hbar}t} -i\frac{E_b}{\hbar}c_a\psi^0_b e^{-i \frac{E_b}{\hbar}t}
+\right]\\
+&c_a(t) e^{-i \frac{E_a}{\hbar}t} E_a^0\psi^0_a + c_a(t) e^{-i \frac{E_a}{\hbar}t}H'(t)\psi^0_a +  c_b(t) e^{-i \frac{E_b}{\hbar}t} E_b^0\psi^0_b + c_b(t) e^{-i \frac{E_b}{\hbar}t}H'(t)\psi^0_b=  \nonumber \\
+&= i\hbar \left[
+\dot{c_a}\psi^0_a e^{-i \frac{E_a}{\hbar}t} + \dot{c_b}\psi^0_b e^{-i \frac{E_b}{\hbar}t}
+\right]
++ c_a(t) e^{-i \frac{E_a}{\hbar}t} E_a^0\psi^0_a +  c_b(t) e^{-i \frac{E_b}{\hbar}t} E_b^0\psi^0_b \nonumber \\
+&\downarrow \nonumber \\
+&c_a(t) e^{-i \frac{E_a}{\hbar}t}H'(t)\psi^0_a + c_b(t) e^{-i \frac{E_b}{\hbar}t}H'(t)\psi^0_b= i\hbar \left[
+\dot{c_a}\psi^0_a e^{-i \frac{E_a}{\hbar}t} + \dot{c_b}\psi^0_b e^{-i \frac{E_b}{\hbar}t}
+\right]
+\end{align}
+
+Proviamo ora ad isolare i due coefficienti.
+
+Iniziamo passando in notazione di Dirac e prima moltiplicando per $\bra{\psi_a^0}$:
+\begin{align}
+c_a e^{-i \frac{E_a}{\hbar}t} \braket{\psi_a^0|H'|\psi_a^0} + 
+c_b e^{-i \frac{E_b}{\hbar}t} \braket{\psi_a^0|H'|\psi_b^0} = i \hbar \dot{c_a} e^{-i \frac{E_a}{\hbar}t}
+\end{align}
+
+definiamo ora per pulizia $H'_{ij} = \braket{\psi_i|H'|\psi_j}$ e $\omega_{ij}=E_i - E_j$. 
+
+Ci rendiamo conto di essere di fronte ad un'equazione differenziale:
+\begin{align}
+\dot{c_a} = -\frac{i}{\hbar}[H'_{aa} c_a + H'_{ab} e^{i\frac{\omega_{ab}}{\hbar}t} c_b]
+\end{align}
+In modo più compatto per casi più generali:
+\begin{align}
+\dot{c_m}(t)= -\frac{i}{\hbar}\sum_n H'_{mn} e^{i\frac{\omega_{mn}}{\hbar}t}c_n
+\end{align}
+
+ROBA DA CHIEDERE POCO CHIARA, APPUNTI PERSI
+
+\subsection{Oscillazioni armoniche (mancanti)}
+
+Supponiamo di avere una dipendenza temporale della forma
+
+\begin{align}
+H'(r,t)= V(r) \cos{\omega t} \rightarrow H'_{ab}= \braket{\psi_a|V|\psi_b} \cos{\omega t} = V_{ab}\cos{\omega t}
+\end{align}
+
+Supponiamo che gli elementi diagonali siano nulli.
+
+*APPUNTI PERSI*
