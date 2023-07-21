@@ -1,76 +1,76 @@
 \contentsline {chapter}{\numberline {1}Crisi della fisica classica}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Corpo Nero}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Effetto fotoelettrico}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Effetto fotoelettrico}{2}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Effetto Compton}{2}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Atomo di Bohr}{2}{section.1.4}%
+\contentsline {section}{\numberline {1.4}Atomo di Bohr}{3}{section.1.4}%
 \contentsline {section}{\numberline {1.5}Figure d'Interferenza per fasci di elettroni}{3}{section.1.5}%
 \contentsline {chapter}{\numberline {2}Introduzione alla meccanica quantistica}{5}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Notazione di Dirac e rappresentazione delle coordinate}{5}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Notazione di Dirac}{5}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}Rappresentazione di Schrödinger (o delle coordinate)}{5}{subsection.2.1.2}%
-\contentsline {section}{\numberline {2.2}I postulati della meccanica quantistica}{6}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Principio di sovrapposizione}{6}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Le osservabili}{6}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Probabilità di transizione}{7}{subsection.2.2.3}%
-\contentsline {section}{\numberline {2.3}Conseguenze dei postulati}{8}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Osservabili non degeneri}{8}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Osservabili degeneri}{8}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Postulato di Von Neumann}{9}{subsection.2.3.3}%
-\contentsline {section}{\numberline {2.4}Operatore di Hamilton ed Equazione di Schrödinger}{10}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Evoluzione temporale ed equazione di Schrödinger dipendente dal tempo}{10}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}L'equazione di Schrödinger dipendente dal tempo}{11}{subsection.2.5.1}%
-\contentsline {subsubsection}{\numberline {2.5.1.1}Stati stazionari}{11}{subsubsection.2.5.1.1}%
-\contentsline {chapter}{\numberline {3}Il momento angolare}{13}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Introduzione}{13}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Principio di conservazione}{13}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Invarianza per rotazioni e conservazione del momento angolare}{14}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Regole di commutazione del momento angolare}{16}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Proprietà dei commutatori}{16}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Commutazione tra q e p}{16}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Commutazione tra q e L}{16}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}Commutazione tra p e L}{17}{subsection.3.4.4}%
-\contentsline {subsection}{\numberline {3.4.5}Commutazione tra componenti di L}{17}{subsection.3.4.5}%
-\contentsline {section}{\numberline {3.5}Il modulo quadro del momento angolare}{17}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Autovalori ed autofunzioni del momento angolare}{18}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Ripasso sulle coordinate sferiche}{18}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Autovalori e autofunzioni di $L_z$}{19}{subsection.3.6.2}%
-\contentsline {subsection}{\numberline {3.6.3}Autovalori e autofunzioni di $L^2$}{20}{subsection.3.6.3}%
-\contentsline {subsection}{\numberline {3.6.4}Operatori di innalzamento e abbassamento del momento angolare}{21}{subsection.3.6.4}%
-\contentsline {chapter}{\numberline {4}Sistemi noti}{23}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Equazione di Schrödinger per sistemi 1D}{23}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Particella libera}{23}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Teorema di degenerazione e inversioni spaziali}{24}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}L'equazione di Schrödinger}{26}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}Soluzioni dell'equazione di Schrödinger}{27}{subsection.4.1.4}%
-\contentsline {subsubsection}{\numberline {4.1.4.1}Autovalori discreti}{27}{subsubsection.4.1.4.1}%
-\contentsline {subsubsection}{\numberline {4.1.4.2}Autovalori continui}{31}{subsubsection.4.1.4.2}%
-\contentsline {section}{\numberline {4.2}L'oscillatore armonico (Caso 1D)}{33}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Spettro e autovettori dell'oscillatore armonico}{34}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}L'oscillatore armonico 1D in RS}{36}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}L'oscillatore armonico (Caso 3D)}{38}{section.4.3}%
-\contentsline {section}{\numberline {4.4}La buca di potenziale (caso 1D)}{40}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Caso di buca infinita}{42}{subsection.4.4.1}%
-\contentsline {section}{\numberline {4.5}Barriera di potenziale ed effetto tunnel}{43}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Equazione di Schrödinger nel caso 3d e potenziali centrali}{45}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Equazione di Schrödinger nel caso 3d}{45}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Potenziali centrali}{46}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Problemi a due corpi}{47}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Sistema di riferimento fisso esterno}{47}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Nel sistema del centro di massa}{47}{subsection.5.3.2}%
-\contentsline {section}{\numberline {5.4}L'atomo d'Idrogeno}{48}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Sistemi composti e principio di Pauli}{55}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Prodotto tensoriale di spazi di Hilbert}{55}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Tipologie di stati}{55}{subsection.6.1.1}%
-\contentsline {section}{\numberline {6.2}Momento di spin dell'elettrone}{56}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Rappresentazioni matriciali dello spin}{56}{subsection.6.2.1}%
-\contentsline {section}{\numberline {6.3}Composizione dei momenti angolari}{58}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Stati di singoletto e tripletto}{61}{subsection.6.3.1}%
-\contentsline {section}{\numberline {6.4}L'operatore di scambio e il principio di Pauli}{62}{section.6.4}%
-\contentsline {subsection}{\numberline {6.4.1}Principio di Pauli}{62}{subsection.6.4.1}%
-\contentsline {chapter}{\numberline {7}Teoria delle perturbazioni}{65}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Perturbazioni indipendenti dal tempo}{65}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Perturbazione al I ordine}{65}{subsection.7.1.1}%
-\contentsline {subsection}{\numberline {7.1.2}Perturbazione al II ordine}{66}{subsection.7.1.2}%
-\contentsline {subsection}{\numberline {7.1.3}Caso degenere}{67}{subsection.7.1.3}%
-\contentsline {section}{\numberline {7.2}Perturbazioni dipendenti dal tempo (incomplete)}{68}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Oscillazioni armoniche (mancanti)}{69}{subsection.7.2.1}%
+\contentsline {section}{\numberline {2.2}I postulati della meccanica quantistica}{7}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Principio di sovrapposizione}{7}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Le osservabili}{7}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Probabilità di transizione}{8}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Conseguenze dei postulati}{9}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Osservabili non degeneri}{9}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Osservabili degeneri}{9}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Postulato di Von Neumann}{10}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Operatore di Hamilton ed Equazione di Schrödinger}{12}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Evoluzione temporale ed equazione di Schrödinger dipendente dal tempo}{12}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}L'equazione di Schrödinger dipendente dal tempo}{14}{subsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.1.1}Stati stazionari}{14}{subsubsection.2.5.1.1}%
+\contentsline {chapter}{\numberline {3}Il momento angolare}{17}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduzione}{17}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Principio di conservazione}{17}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Invarianza per rotazioni e conservazione del momento angolare}{18}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Regole di commutazione del momento angolare}{20}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Proprietà dei commutatori}{20}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Commutazione tra q e p}{20}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Commutazione tra q e L}{21}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Commutazione tra p e L}{22}{subsection.3.4.4}%
+\contentsline {subsection}{\numberline {3.4.5}Commutazione tra componenti di L}{22}{subsection.3.4.5}%
+\contentsline {section}{\numberline {3.5}Il modulo quadro del momento angolare}{22}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Autovalori ed autofunzioni del momento angolare}{24}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Ripasso sulle coordinate sferiche}{24}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Autovalori e autofunzioni di $L_z$}{25}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}Autovalori e autofunzioni di $L^2$}{26}{subsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.6.4}Operatori di innalzamento e abbassamento del momento angolare}{27}{subsection.3.6.4}%
+\contentsline {chapter}{\numberline {4}Sistemi noti}{29}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Equazione di Schrödinger per sistemi 1D}{29}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Particella libera}{29}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Teorema di degenerazione e inversioni spaziali}{31}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}L'equazione di Schrödinger}{34}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Soluzioni dell'equazione di Schrödinger}{35}{subsection.4.1.4}%
+\contentsline {subsubsection}{\numberline {4.1.4.1}Autovalori discreti}{35}{subsubsection.4.1.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.4.2}Autovalori continui}{41}{subsubsection.4.1.4.2}%
+\contentsline {section}{\numberline {4.2}L'oscillatore armonico (Caso 1D)}{44}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Spettro e autovettori dell'oscillatore armonico}{45}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}L'oscillatore armonico 1D in RS}{48}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}L'oscillatore armonico (Caso 3D)}{50}{section.4.3}%
+\contentsline {section}{\numberline {4.4}La buca di potenziale (caso 1D)}{52}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Caso di buca infinita}{55}{subsection.4.4.1}%
+\contentsline {section}{\numberline {4.5}Barriera di potenziale ed effetto tunnel}{56}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Equazione di Schrödinger nel caso 3d e potenziali centrali}{59}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Equazione di Schrödinger nel caso 3d}{59}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Potenziali centrali}{60}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Problemi a due corpi}{62}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Sistema di riferimento fisso esterno}{62}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Nel sistema del centro di massa}{62}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}L'atomo d'Idrogeno}{63}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Sistemi composti e principio di Pauli}{73}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Prodotto tensoriale di spazi di Hilbert}{73}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Tipologie di stati}{73}{subsection.6.1.1}%
+\contentsline {section}{\numberline {6.2}Momento di spin dell'elettrone}{74}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Rappresentazioni matriciali dello spin}{74}{subsection.6.2.1}%
+\contentsline {section}{\numberline {6.3}Composizione dei momenti angolari}{77}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Stati di singoletto e tripletto}{81}{subsection.6.3.1}%
+\contentsline {section}{\numberline {6.4}L'operatore di scambio e il principio di Pauli}{82}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Principio di Pauli}{82}{subsection.6.4.1}%
+\contentsline {chapter}{\numberline {7}Teoria delle perturbazioni}{85}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Perturbazioni indipendenti dal tempo}{85}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Perturbazione al I ordine}{85}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Perturbazione al II ordine}{87}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.3}Caso degenere}{89}{subsection.7.1.3}%
+\contentsline {section}{\numberline {7.2}Perturbazioni dipendenti dal tempo (incomplete)}{90}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Oscillazioni armoniche (mancanti)}{91}{subsection.7.2.1}%

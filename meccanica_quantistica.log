@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.31)  23 JUN 2023 12:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.31)  21 JUL 2023 13:01
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -375,16 +375,16 @@ LaTeX Font Info:    ... okay on input line 22.
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
-* paper: legalpaper
+* paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: twoside 
-* h-part:(L,W,R)=(36.135pt, 542.02501pt, 36.135pt)
-* v-part:(T,H,B)=(36.135pt, 939.51001pt, 36.135pt)
-* \paperwidth=614.295pt
-* \paperheight=1011.78pt
-* \textwidth=542.02501pt
-* \textheight=939.51001pt
+* h-part:(L,W,R)=(36.135pt, 525.23788pt, 36.135pt)
+* v-part:(T,H,B)=(36.135pt, 772.77686pt, 36.135pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=525.23788pt
+* \textheight=772.77686pt
 * \oddsidemargin=-36.135pt
 * \evensidemargin=-36.135pt
 * \topmargin=-68.00879pt
@@ -490,75 +490,86 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
 
 ]
-<./images/4Idky.jpg, id=428, 521.95pt x 188.705pt>
+<./images/4Idky.jpg, id=426, 521.95pt x 188.705pt>
 File: ./images/4Idky.jpg Graphic file (type jpg)
 <use ./images/4Idky.jpg>
 Package pdftex.def Info: ./images/4Idky.jpg  used on input line 83.
-(pdftex.def)             Requested size: 542.02501pt x 195.96637pt.
+(pdftex.def)             Requested size: 525.23788pt x 189.89659pt.
  [2 <./images/4Idky.jpg>]
-Overfull \hbox (7.47762pt too wide) in paragraph at lines 125--126
+Overfull \hbox (24.26474pt too wide) in paragraph at lines 124--125
 []\OT1/cmr/m/n/12 Se di-etro tale su-per-fice poni-amo una las-tra di ma-te-ri-
 ale sen-si-bile, noter-emo la tipica figura d'interferenza...
  []
 
-<./images/Elettroni_e_fenditure.jpg, id=442, 289.08pt x 289.08pt>
+<./images/Elettroni_e_fenditure.jpg, id=437, 289.08pt x 289.08pt>
 File: ./images/Elettroni_e_fenditure.jpg Graphic file (type jpg)
 <use ./images/Elettroni_e_fenditure.jpg>
 Package pdftex.def Info: ./images/Elettroni_e_fenditure.jpg  used on input line
- 166.
-(pdftex.def)             Requested size: 271.0125pt x 271.02505pt.
-) [3 <./images/Elettroni_e_fenditure.jpg>]
+ 165.
+(pdftex.def)             Requested size: 262.61894pt x 262.63092pt.
+) [3] [4 <./images/Elettroni_e_fenditure.jpg>]
 \openout2 = `./TeX_files/chapter02.aux'.
 
- (./TeX_files/chapter02.tex [4
-
-
-
-
-]
+ (./TeX_files/chapter02.tex
 Chapter 2.
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
+[5
+
+
+
+
+] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
 
+[7]
 LaTeX Font Info:    Trying to load font information for U+dsrom on input line 1
-25.
-(/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
+57.
+ (/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-) [6] [7]
-[8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 332--333
+) [8]
+[9] [10] [11]
+Underfull \hbox (badness 10000) in paragraph at lines 364--365
 
  []
 
-[10])
-Overfull \hbox (13.7989pt too wide) has occurred while \output is active
+[12]
+Overfull \hbox (30.58603pt too wide) has occurred while \output is active
 \OT1/cmr/m/sl/12 2.5.  EVOLUZIONE TEMPORALE ED EQUAZIONE DI SCHR[]ODINGER DIPEN
-DENTE DAL TEMPO \OT1/cmr/m/n/12 11
+DENTE DAL TEMPO \OT1/cmr/m/n/12 13
  []
 
-[11]
+[13]) [14]
+Overfull \hbox (30.58603pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/12 2.5.  EVOLUZIONE TEMPORALE ED EQUAZIONE DI SCHR[]ODINGER DIPEN
+DENTE DAL TEMPO \OT1/cmr/m/n/12 15
+ []
+
+[15]
 \openout2 = `./TeX_files/chapter03.aux'.
 
- (./TeX_files/chapter03.tex [12
+ (./TeX_files/chapter03.tex [16
 
 
 
 
 ]
 Chapter 3.
-[13]
+[17]
 Underfull \hbox (badness 10000) in paragraph at lines 159--160
 
  []
 
-[14] [15] [16]
+[18] [19]
+Underfull \vbox (badness 5954) has occurred while \output is active []
+
+ [20]
+[21]
 Underfull \hbox (badness 10000) in paragraph at lines 358--359
 
  []
 
-[17] [18]
+[22] [23] [24]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 495.
@@ -571,7 +582,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 495.
 
-[19]
+[25]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 557.
@@ -584,133 +595,128 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 557.
 
-[20] [21]) [22]
+[26] [27]) [28]
 \openout2 = `./TeX_files/chapter04.aux'.
 
  (./TeX_files/chapter04.tex
 Chapter 4.
-[23
+[29
 
 
 
 
-]
+] [30]
 LaTeX Font Info:    Trying to load font information for U+bbold on input line 1
 15.
- (/usr/share/texlive/texmf-dist/tex/latex/bbold/Ubbold.fd) [24] [25]
-<images/TipoI.png, id=765, 432.61626pt x 351.3125pt>
+ (/usr/share/texlive/texmf-dist/tex/latex/bbold/Ubbold.fd) [31]
+[32] [33]
+<images/TipoI.png, id=810, 432.61626pt x 351.3125pt>
 File: images/TipoI.png Graphic file (type png)
 <use images/TipoI.png>
 Package pdftex.def Info: images/TipoI.png  used on input line 259.
-(pdftex.def)             Requested size: 108.40334pt x 88.0316pt.
-<images/TipoII.png, id=766, 457.71pt x 389.455pt>
+(pdftex.def)             Requested size: 105.04596pt x 85.30305pt.
+<images/TipoII.png, id=811, 457.71pt x 389.455pt>
 File: images/TipoII.png Graphic file (type png)
 <use images/TipoII.png>
 Package pdftex.def Info: images/TipoII.png  used on input line 279.
-(pdftex.def)             Requested size: 108.40334pt x 92.23505pt.
-
-[26 <./images/TipoI.png> <./images/TipoII.png>] [27]
-<images/I.png, id=803, 224.84pt x 136.51pt>
+(pdftex.def)             Requested size: 105.04596pt x 89.37665pt.
+ [34 <./images/TipoI.png>] [35 <./images/TipoII.png>] [36]
+<images/I.png, id=850, 224.84pt x 136.51pt>
 File: images/I.png Graphic file (type png)
 <use images/I.png>
 Package pdftex.def Info: images/I.png  used on input line 380.
-(pdftex.def)             Requested size: 162.60915pt x 98.73079pt.
-<images/II.png, id=804, 223.83624pt x 139.52126pt>
+(pdftex.def)             Requested size: 157.57297pt x 95.67299pt.
+<images/II.png, id=851, 223.83624pt x 139.52126pt>
 File: images/II.png Graphic file (type png)
 <use images/II.png>
 Package pdftex.def Info: images/II.png  used on input line 389.
-(pdftex.def)             Requested size: 162.60915pt x 101.36pt.
-<images/III.png, id=805, 222.8325pt x 152.57pt>
+(pdftex.def)             Requested size: 157.57297pt x 98.21985pt.
+<images/III.png, id=852, 222.8325pt x 152.57pt>
 File: images/III.png Graphic file (type png)
 <use images/III.png>
 Package pdftex.def Info: images/III.png  used on input line 398.
-(pdftex.def)             Requested size: 162.60915pt x 111.33559pt.
- [28 <./images/I.png> <./images/II.png> <./images/III.png>] [29]
-Overfull \hbox (3.67393pt too wide) in paragraph at lines 515--516
-[]\OT1/cmr/m/n/12 Le fun-zioni \OT1/cmr/bx/n/12 dis-pari \OT1/cmr/m/n/12 hanno 
-o un nu-mero dis-pari di nodi o in-finito, doven-dosi an-nullare an-che nell'or
-igine
- []
-
-[30]
-<images/contI.png, id=840, 230.8625pt x 183.68625pt>
+(pdftex.def)             Requested size: 157.57297pt x 107.88779pt.
+ [37 <./images/I.png> <./images/II.png> <./images/III.png>] [38] [39] [40]
+<images/contI.png, id=892, 230.8625pt x 183.68625pt>
 File: images/contI.png Graphic file (type png)
 <use images/contI.png>
 Package pdftex.def Info: images/contI.png  used on input line 540.
-(pdftex.def)             Requested size: 162.60915pt x 129.38109pt.
-<images/contII.png, id=841, 434.62375pt x 163.61125pt>
+(pdftex.def)             Requested size: 157.57297pt x 125.37305pt.
+<images/contII.png, id=893, 434.62375pt x 163.61125pt>
 File: images/contII.png Graphic file (type png)
 <use images/contII.png>
 Package pdftex.def Info: images/contII.png  used on input line 548.
-(pdftex.def)             Requested size: 162.60915pt x 61.21425pt.
- [31 <./images/contI.png> <./images/contII.png>]
-<images/contIII.png, id=858, 272.01625pt x 197.73875pt>
+(pdftex.def)             Requested size: 157.57297pt x 59.31691pt.
+ [41 <./images/contI.png> <./images/contII.png>] [42]
+<images/contIII.png, id=915, 272.01625pt x 197.73875pt>
 File: images/contIII.png Graphic file (type png)
 <use images/contIII.png>
 Package pdftex.def Info: images/contIII.png  used on input line 600.
-(pdftex.def)             Requested size: 271.0125pt x 197.02016pt.
- [32 <./images/contIII.png>] [33]
+(pdftex.def)             Requested size: 262.61894pt x 190.91626pt.
+ [43 <./images/contIII.png>] [44]
 
 LaTeX Warning: Command \i invalid in math mode on input line 741.
 
 
 LaTeX Warning: Command \i invalid in math mode on input line 741.
 
-[34] [35] [36] [37] [38] [39]
-<images/buca.png, id=968, 481.8pt x 361.35pt>
+[45] [46] [47] [48] [49] [50] [51]
+<images/buca.png, id=1029, 481.8pt x 361.35pt>
 File: images/buca.png Graphic file (type png)
 <use images/buca.png>
 Package pdftex.def Info: images/buca.png  used on input line 1044.
-(pdftex.def)             Requested size: 379.41585pt x 284.57014pt.
- [40 <./images/buca.png>] [41] [42]
-<images/BP.png, id=1018, 359.09157pt x 167.87718pt>
+(pdftex.def)             Requested size: 367.6649pt x 275.75366pt.
+ [52 <./images/buca.png>] [53] [54] [55]
+<images/BP.png, id=1082, 359.09157pt x 167.87718pt>
 File: images/BP.png Graphic file (type png)
 <use images/BP.png>
 Package pdftex.def Info: images/BP.png  used on input line 1290.
-(pdftex.def)             Requested size: 325.2183pt x 152.05122pt.
- [43 <./images/BP.png>]) [44]
+(pdftex.def)             Requested size: 315.14594pt x 147.343pt.
+
+[56 <./images/BP.png>]) [57]
 \openout2 = `./TeX_files/chapter05.aux'.
 
- (./TeX_files/chapter05.tex
-Chapter 5.
-[45
+ (./TeX_files/chapter05.tex [58
 
 
 
 
 ]
+Chapter 5.
+[59]
 Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
  []
 
-[46] [47] [48] [49] [50] [51] [52]) [53]
+[60] [61] [62] [63] [64] [65] [66] [67] [68] [69] [70]) [71]
 \openout2 = `./TeX_files/chapter06.aux'.
 
- (./TeX_files/chapter06.tex [54
+
+(./TeX_files/chapter06.tex [72
 
 
 
 
 ]
 Chapter 6.
-[55] [56] [57] [58] [59]
-<images/TCG.png, id=1289, 663.47874pt x 798.985pt>
+[73] [74] [75] [76] [77] [78] [79]
+<images/TCG.png, id=1383, 663.47874pt x 798.985pt>
 File: images/TCG.png Graphic file (type png)
 <use images/TCG.png>
 Package pdftex.def Info: images/TCG.png  used on input line 532.
-(pdftex.def)             Requested size: 542.02501pt x 652.75803pt.
- [60 <./images/TCG.png (PNG copy)>] [61] [62]) [63]
+(pdftex.def)             Requested size: 525.23788pt x 632.5445pt.
+ [80 <./images/TCG.png (PNG copy)>] [81]
+[82] [83]) [84]
 \openout2 = `./TeX_files/chapter07.aux'.
 
-
-(./TeX_files/chapter07.tex [64
-
-
-
-
-]
+ (./TeX_files/chapter07.tex
 Chapter 7.
-[65] [66] [67] [68]) [69] [70
+[85
+
+
+
+
+] [86] [87] [88] [89] [90]) [91] [92
 
 
 
@@ -726,13 +732,13 @@ Package rerunfilecheck Info: File `meccanica_quantistica.out' has not changed.
 (rerunfilecheck)             Checksum: 949514C0C1F4FABBF4A9C7776D31118B;17033.
  ) 
 Here is how much of TeX's memory you used:
- 11402 strings out of 478287
- 183928 string characters out of 5849289
- 495027 words of memory out of 5000000
+ 11434 strings out of 478287
+ 184162 string characters out of 5849289
+ 489051 words of memory out of 5000000
  28533 multiletter control sequences out of 15000+600000
  479223 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,21n,63p,581b,481s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,21n,63p,581b,431s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texl
@@ -752,10 +758,10 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf
 onts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/doublestroke/dsrom12.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /public/amsfonts/latxfont/line10.pfb>
-Output written on meccanica_quantistica.pdf (74 pages, 2004605 bytes).
+Output written on meccanica_quantistica.pdf (96 pages, 2018008 bytes).
 PDF statistics:
- 1718 PDF objects out of 1728 (max. 8388607)
- 1553 compressed objects within 16 object streams
- 845 named destinations out of 1000 (max. 500000)
+ 1828 PDF objects out of 2073 (max. 8388607)
+ 1640 compressed objects within 17 object streams
+ 877 named destinations out of 1000 (max. 500000)
  679 words of extra memory for PDF output out of 10000 (max. 10000000)
 

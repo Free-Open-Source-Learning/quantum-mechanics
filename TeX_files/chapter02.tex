@@ -3,31 +3,63 @@
 \section{Notazione di Dirac e rappresentazione delle coordinate}
 Diamo rapidamente la definizione delle grandezze che andremo a studiare. Il loro significato verrà spiegato nelle pagine successive.
 \subsection{Notazione di Dirac}
-\begin{align}
-\ket{\psi} &= \left(
-\begin{array}{ccc}\psi_1 \\ \dots \\ \psi_n\end{array}
-\right) \quad &\text{Ket, o vettore colonna}\\
-\bra{\psi} &= (\psi_1^* \dots \psi_n^*) \quad &\text{Bra, o vettore riga}\\
-\mathbf{\hat O} &= \left(
-\begin{array}{ccc}o_{11} & \dots & o_{1n} \\ \dots & \dots & \dots \\ o_{n1} & \dots & o_{nn}\end{array}
-\right) \quad &\text{Operatore}\\
-\braket{\phi | \psi} &= 
-\left(\phi_i^* \dots \phi_n^* \right) \left(
-\begin{array}{ccc}\psi_1 \\ \dots \\ \psi_n\end{array}
-\right) \quad &\text{Braket, o prodotto scalare}\\	
-|\psi|^2 &=\braket{\psi | \psi} = 
-\left(\psi_i^* \dots \psi_n^* \right) \left(
-\begin{array}{ccc}\psi_1 \\ \dots \\ \psi_n\end{array}
-\right) \quad &\text{Modulo quadro di un vettore}
-\end{align}
+\begin{enumerate}
+	\item Ket, o vettore colonna 
+		\begin{align}
+			\ket{\psi} &= \left(
+			\begin{array}{ccc}\psi_1 \\ \dots \\ \psi_n\end{array}
+			\right)
+		\end{align}
+	\item Bra, o vettore riga
+		\begin{align}
+			\bra{\psi} &= (\psi_1^* \dots \psi_n^*)
+		\end{align}
+	\item Operatore
+		\begin{align}
+			\mathbf{\hat O} &= \left(
+			\begin{array}{ccc}o_{11} & \dots & o_{1n} \\ \dots & \dots & \dots \\ o_{n1} & \dots & o_{nn}\end{array}
+			\right)
+		\end{align}
+	\item Braket, o prodotto scalare
+		\begin{align}
+			\braket{\phi | \psi} &= 
+			\left(\phi_i^* \dots \phi_n^* \right) \left(
+			\begin{array}{ccc}\psi_1 \\ \dots \\ \psi_n\end{array}
+			\right)
+		\end{align}
+	\item Modulo quadro di un vettore
+	\begin{align}
+		|\psi|^2 &=\braket{\psi | \psi} = 
+		\left(\psi_i^* \dots \psi_n^* \right) \left(
+		\begin{array}{ccc}\psi_1 \\ \dots \\ \psi_n\end{array}
+		\right)
+	\end{align}
+\end{enumerate}
+
  \subsection{Rappresentazione di Schrödinger (o delle coordinate)}
- \begin{align}
- 	\braket{x | \psi} &\rightarrow \psi(x,t) \in L_2 \quad &\text{Funzione d'onda}\\
- 	q_i\ket{\psi} &\rightarrow x_i\psi(x,t) \quad &\text{Operatore posizone applicato alla funzione d'onda}\\
- 	p_i\ket{\psi} &\rightarrow -i\hbar \frac{\partial}{\partial x_i}  \psi(x,t) \quad &\text{Operatore impulso applicato alla funzione d'onda}\\
- 	\braket{\phi | \psi} &\rightarrow \int \limits_{R^n} dx \: \phi^*(x,t)\psi(x,t) \quad &\text{Prodotto scalare in rappresentazione di Schrödinger}\\
- 	\braket{\psi | \psi} &\rightarrow |\psi(x,t)|^2 = \int \limits_{R^n} dx \: \psi^*(x,t)\psi(x,t) \quad &\text{Modulo quadro in rappresentazione di Schrödinger}
- \end{align}
+ 
+ \begin{enumerate}
+ 	\item Funzione d'onda
+ 		 \begin{align}
+ 			\braket{x | \psi} &\rightarrow \psi(x,t) \in L_2
+ 		\end{align}
+ 	\item Operatore posizone applicato alla funzione d'onda
+ 		 \begin{align}
+			q_i\ket{\psi} &\rightarrow x_i\psi(x,t)
+ 		\end{align}
+ 	\item Operatore impulso applicato alla funzione d'onda
+		 \begin{align}
+			p_i\ket{\psi} &\rightarrow -i\hbar \frac{\partial}{\partial x_i}  \psi(x,t)
+		\end{align} 	
+ 	\item Prodotto scalare in rappresentazione di Schrödinger
+ 		 \begin{align}
+	 			\braket{\phi | \psi} &\rightarrow \int \limits_{R^n} dx \: \phi^*(x,t)\psi(x,t) 
+ 		\end{align}
+ 	\item Modulo quadro in rappresentazione di Schrödinger
+ 		 \begin{align}
+ 			\braket{\psi | \psi} &\rightarrow |\psi(x,t)|^2 = \int \limits_{R^n} dx \: \psi^*(x,t)\psi(x,t)
+ 		\end{align}
+ \end{enumerate}
  
 \newpage
 
